@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(101, 74, 223);
+}
+
+
+.avatar img {
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+.nameTag {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.subNameTag {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.link1, .link2, .link3 {
+    height: 60px;
+    width: 50%;
+    border: 1px solid #fff;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin-top: 10px;
+    transition: all .6s;
+}
+
+.link1 .social-media, .link2 .social-media, .link3 .social-media {
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    font-size: 20px;
+}
+
+.link1:hover, .link2:hover, .link3:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: black;
+}
+
+.link1:hover .social-media, .link2:hover .social-media, .link3:hover .social-media {
+    color: black;
+}
+
+@media (max-width:740px) {
+    .link1, .link2, .link3 {
+        width: 90%;
+    }
+}
